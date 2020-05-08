@@ -46,7 +46,8 @@ namespace PriceHistory
 		{
 			string requestUri;
 			string absolutePath="https://personal.vanguard.com/us/funds/tools/pricehistorysearch";
-			requestUri=absolutePath;
+            string Sc = "?Sc=1";
+			requestUri =absolutePath+Sc;
 			return requestUri;
 		}
 		
@@ -59,7 +60,7 @@ namespace PriceHistory
 			string FundType="&FundType=VanguardFunds";
 			string FundIntExt="&FundIntExt=INT";
 			string FundId="&FundId="+fundId;
-			string Sc="&Sc=0";
+			string Sc="&Sc=1";
 			string fundName="&fundName="+fundId;
 			string fundValue="&fundValue="+fundId;
 			string radiobutton2="&radiobutton2=1";
